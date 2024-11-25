@@ -1,0 +1,148 @@
+/* ตัวอักษร */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #dbddde;
+    color: #212529;
+}
+/* =================================================================
+/* Header Background */
+header {
+    background-color: #ecf1f6; /* โทนสีอ่อน */
+    border-bottom: 1px solid #dee2e6; /* เส้นขอบด้านล่าง */
+}
+
+/* Title */
+header h1 {
+    font-family: 'Prompt', sans-serif;
+    color: #343a40; /* สีเทาเข้ม */
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #007bff; /* เปลี่ยนเป็นสีฟ้าเมื่อชี้เมาส์ */
+}
+
+/* Navigation Links (Buttons) */
+.nav-link {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef; /* เพิ่มพื้นหลังสีอ่อนเมื่อชี้เมาส์ */
+    color: #212529;
+    transform: scale(1.05); /* ขยายเล็กน้อย */
+}
+
+/* ปุ่มสีสำหรับแต่ละภูมิภาค */
+.btn-outline-primary {
+    border-color: #407bba;
+    color: #8397ac;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8090a1;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    border-color: #5d7186;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-outline-success {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-outline-warning {
+    border-color: #07e6ff;
+    color: #07deff;
+}
+
+.btn-outline-warning:hover {
+    background-color: #07eeff;
+    color: #212529;
+}
+
+.btn-outline-info {
+    border-color: #17a2b8;
+    color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: #fff;
+}
+/* สไตล์ปุ่มสำหรับภาคตะวันออก */
+.btn-custom {
+    color: #000; /* สีข้อความดำ */
+    border: 2px solid hwb(177 27% 5%);/* ขอบสีส้ม */
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: hwb(177 27% 5%); /* สีส้มเมื่อชี้เมาส์ */
+    color: #fff; /* สีข้อความเปลี่ยนเป็นขาว */
+    border-color: hwb(177 16% 25%); /* ยังคงสีขอบเดิม */
+}
+
+/* =================================================================
+
+/* ปุ่มธีมสำหรับภาคเหนือ */
+.btn-theme-north {
+    color: #0a8238; /* สีข้อความเปลี่ยนเป็นขาว */
+    border-color: hwb(136 2% 52%); /* ยังคงสีขอบเดิม */
+    transition: all 0.3s ease;
+}
+
+.btn-theme-north:hover {
+    
+    background-color: #218838; /* สีเขียวเข้มเมื่อชี้เมาส์ */
+    color: #fff;
+}
+
+/* ปุ่มธีมสำหรับภาคกลาง */
+.btn-theme-central {
+    color: #820a1c; /* สีข้อความเปลี่ยนเป็นขาว */
+    border-color: hwb(0 2% 52%); /* ยังคงสีขอบเดิม */
+    transition: all 0.3s ease;
+}
+
+.btn-theme-central:hover {
+    background-color: #c82333; /* สีแดงเข้มเมื่อชี้เมาส์ */
+    color: #fff;
+}
+/* ปุ่มสำหรับจองที่พัก */
+.btn-booking {
+    background-color: #28a745; /* สีเขียว */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-booking:hover {
+    background-color: #218838; /* สีเขียวเข้มเมื่อชี้เมาส์ */
+    color: #fff;
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+
+

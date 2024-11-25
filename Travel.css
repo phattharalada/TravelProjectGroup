@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4a4a4a; /* สีพื้นหลัง */
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.custom-btn {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
+    position: absolute; /* จัดตำแหน่งแบบอิสระ */
+    left: 10px; /* ชิดด้านซ้าย */
+    top: 50%; /* จัดตรงกลางแกน Y */
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card h2 {
+    color: #333;
+    margin-top: 0;
+}
+.card p {
+    color: #666;
+    margin-bottom: 0;
+}
+.move{ 
+    background-color: #494d49;
+    color: white;
+    text-align: left;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.5cm;
+    margin-right: 38cm; 
+}
+
+.rating {
+    display: flex;
+    direction: row-reverse;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+  

@@ -1,0 +1,16 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #e6f7ff; /* สีฟ้าอ่อน */
+}
+
+header {
+    background-color: #007bff; /* สีน้ำเงิน */
+}
+
+.card button {
+    background-color: #28a745; /* สีเขียว */
+}
+
+.card button:hover {
+    background-color: #218838;
+}

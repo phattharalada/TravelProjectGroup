@@ -13,27 +13,43 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-light text-dark text-center py-4 shadow-sm">
-        <h1 class="display-5 fw-bold text-primary">แหล่งท่องเที่ยวในประเทศไทย</h1>
-        <nav class="mt-3">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary mx-2 rounded-pill px-4" href="NorthRegion.html">ภาคเหนือ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-secondary mx-2 rounded-pill px-4" href="CentralRegion.html">ภาคกลาง</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-success mx-2 rounded-pill px-4" href="SouthRegion.html">ภาคใต้</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-warning mx-2 rounded-pill px-4" href="EasternRegion.html">ภาคตะวันออก</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-info mx-2 rounded-pill px-4" href="NortheastRegion.html">ภาคตะวันออกเฉียงเหนือ</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="bg-light text-dark shadow-sm py-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="logo.gif" alt="Logo" width="80" height="80" class="rounded-circle me-2">
+                </a>
+                <span class="fw-bold text-primary small-title">แหล่งท่องเที่ยวในประเทศไทย</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary mx-2 rounded-pill px-4" href="NorthRegion.html">ภาคเหนือ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-secondary mx-2 rounded-pill px-4" href="CentralRegion.html">ภาคกลาง</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-success mx-2 rounded-pill px-4" href="SouthRegion.html">ภาคใต้</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-warning mx-2 rounded-pill px-4" href="EasternRegion.html">ภาคตะวันออก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-info mx-2 rounded-pill px-4" href="NortheastRegion.html">ภาคตะวันออกเฉียงเหนือ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-info mx-2 rounded-pill px-4" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item btn-admin">
+                            <a class="btn btn-outline-primary px-4 py-2" href="Admincontact.html">Admin Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     
 
@@ -125,12 +141,62 @@
         </div>
     </section>
     </main>
+    <main class="container mt-5">
+        <!-- Features Section -->
+        <section id="features" class="mb-5">
+            <h2 class="text-center fw-bold text-primary mb-4">Our Features & Services</h2>
+            <div class="feature-container">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <img src="icon1.jpeg" alt="Feature 1 Icon" class="feature-icon">
+                    <h3>บริการจองที่พัก</h3>
+                    <p>จองที่พักได้ง่ายและสะดวกในทุกภาคของประเทศไทย พร้อมตัวเลือกหลากหลาย</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <img src="icon2.jpeg" alt="Feature 2 Icon" class="feature-icon">
+                    <h3>แผนที่แนะนำ</h3>
+                    <p>แผนที่แบบโต้ตอบ ช่วยให้ค้นหาสถานที่ท่องเที่ยวที่ใกล้เคียงได้สะดวก</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <img src="icon3.jpeg" alt="Feature 3 Icon" class="feature-icon">
+                    <h3>โปรโมชั่นพิเศษ</h3>
+                    <p>ข้อเสนอพิเศษสำหรับการจองที่พักและแพ็คเกจท่องเที่ยว</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
 
     <!-- Footer -->
     <footer class="bg-light text-center py-4 border-top">
-        <p class="mb-0 text-muted">&copy; 2024 แหล่งท่องเที่ยวในประเทศไทย. สงวนลิขสิทธิ์.</p>
-        <p class="mb-0 text-muted">&copy; 2024 Dettol Public Company Limited</p>
-        <a href="Admincontact.html">Admin Contact</a>
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2024 แหล่งท่องเที่ยวในประเทศไทย. สงวนลิขสิทธิ์.</p>
+            <p class="mb-2 text-muted">&copy; 2024 Dettol Public Company Limited</p>
+            <!-- Social Media Links -->
+            <div class="social-links mt-3">
+                <h5 class="text-primary">ติดตามเราบนโซเชียลมีเดีย!</h5>
+                <div class="d-flex justify-content-center gap-4 mt-2">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/pimfanpage" target="_blank" class="social-link">
+                        <img src="facebook-icon.png" alt="Facebook" width="40" height="40">
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/teampim/" target="_blank" class="social-link">
+                        <img src="ig-icon.png" alt="Instagram" width="40" height="40">
+                    </a>
+                    <!-- X -->
+                    <a href="https://x.com/PIMCampus" target="_blank" class="social-link">
+                        <img src="x-icon.png" alt="X" width="40" height="40">
+                    </a>
+                    <!-- Website -->
+                    <a href="https://www.pim.ac.th/" target="_blank" class="social-link">
+                        <img src="web-icon.png" alt="Website" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap 5 JS -->

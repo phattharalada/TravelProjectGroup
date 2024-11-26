@@ -9,6 +9,9 @@ body {
 header {
     background-color: #ecf1f6; /* โทนสีอ่อน */
     border-bottom: 1px solid #dee2e6; /* เส้นขอบด้านล่าง */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Title */
@@ -16,24 +19,61 @@ header h1 {
     font-family: 'Prompt', sans-serif;
     color: #343a40; /* สีเทาเข้ม */
     transition: color 0.3s ease;
+    margin: 0;
+    text-align: center;
 }
 
 header h1:hover {
     color: #007bff; /* เปลี่ยนเป็นสีฟ้าเมื่อชี้เมาส์ */
 }
-
+.small-title {
+    font-size: 1.8rem; /* ลดฟอนต์จากค่าเดิม */
+}
+.navbar-toggler {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.navbar-toggler-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 30 30'%3E%3Cpath d='M4 7h22M4 15h22M4 23h22' stroke='%23000' stroke-width='2'%3E%3C/path%3E%3C/svg%3E");
+}
+/* Center Navbar Links */
+.navbar-collapse {
+    text-align: center;
+}
+.nav {
+    flex-wrap: nowrap; /* บังคับให้องค์ประกอบอยู่ในบรรทัดเดียว */
+    gap: 10px;
+}
+.nav-item {
+    white-space: nowrap;
+    text-align: center; /* จัดข้อความกลางปุ่ม */
+    font-size: 0.9rem; /* ลดขนาดฟอนต์ในปุ่ม */
+}
 /* Navigation Links (Buttons) */
 .nav-link {
     font-family: 'Prompt', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    text-align: center; /* จัดข้อความกลางปุ่ม */
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างแต่ละลิงก์ */
+    margin-left: 10px; /* เพิ่มระยะห่างซ้าย */
+    overflow: hidden; /* ซ่อนข้อความล้น */
+    text-overflow: ellipsis; /* แสดง "..." เมื่อข้อความเกินขอบ */
 }
 
 .nav-link:hover {
     background-color: #e9ecef; /* เพิ่มพื้นหลังสีอ่อนเมื่อชี้เมาส์ */
     color: #212529;
     transform: scale(1.05); /* ขยายเล็กน้อย */
+}
+.nav-item:last-child .nav-link {
+    margin-left: auto; /* จัดปุ่ม Admin Contact ให้อยู่ชิดขวาสุด */
 }
 
 /* ปุ่มสีสำหรับแต่ละภูมิภาค */
@@ -144,5 +184,88 @@ header h1:hover {
     transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
 }
 
+header img {
+    border: 2px solid #007bff; /* เพิ่มขอบสี */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+/* Limit button size in header */
+header .btn {
+    font-size: 0.9rem; /* ลดขนาดฟอนต์ */
+    padding: 8px 15px; /* ลด padding */
+    white-space: nowrap; /* ป้องกันข้อความขึ้นบรรทัดใหม่ */
+    max-width: 150px; /* จำกัดความกว้าง */
+}
+/* Features Section */
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns สำหรับหน้าจอขนาดใหญ่ */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+    text-align: center;
+    padding: 20px 0;
+}
 
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.feature-card:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ Hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff; /* สีหัวข้อ */
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Tablet: 1 Column */
+@media (max-width: 768px) {
+    .feature-container {
+        grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+        gap: 15px;
+    }
+    h1.display-6 {
+        font-size: 1.5rem;
+    }
+    .nav {
+        flex-wrap: wrap; /* ยอมให้ปุ่มขึ้นบรรทัดใหม่ถ้าขนาดหน้าจอเล็ก */
+        justify-content: center;
+    }
+    .small-title {
+        font-size: 1.5rem; /* ลดขนาดฟอนต์หัวข้อเพิ่มสำหรับ Tablet */
+    }
+}
+header .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px; /* ทำให้ปุ่มโค้งมน */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #007bff; /* สีพื้นหลังเมื่อ Hover */
+    color: #fff; /* เปลี่ยนสีตัวอักษรเมื่อ Hover */
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none; /* ซ่อนปุ่ม Hamburger */
+    }
+}
